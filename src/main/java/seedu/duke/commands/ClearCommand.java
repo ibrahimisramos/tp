@@ -10,12 +10,11 @@ public class ClearCommand extends Command {
         for (int i = 0; i < timetable.size(); i++) {
             timetable.remove(i);
         }
-        printClearConfirmation();
-        return "";
+        return printClearConfirmation();
     }
 
-    public static void printClearConfirmation() {
-        System.out.println("Your whole timetable has been cleared");
+    private static String printClearConfirmation() {
+       return "Your whole timetable has been cleared";
     }
 
 }
